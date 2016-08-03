@@ -1,0 +1,14 @@
+body {
+  max-width: 1080px;
+  min-with: 540px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+
+.oozeline img {
+  width: 18%;
+}
