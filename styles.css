@@ -2,13 +2,69 @@ body {
   max-width: 1080px;
   min-with: 540px;
   margin: 0 auto;
+  background-color: thistle;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 8rem;
+  margin: 0;
+  text-shadow: white 0 0 10px;
+  color: rebeccapurple;
+}
+
+h2 {
+  font-style: italic;
+}
+
+p {
+  margin: 1rem 5% 0;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+br {
+  line-height: 1.5;
 }
 
 .heading {
   text-align: center;
 }
 
-
 .oozeline img {
   width: 18%;
+}
+
+.col {
+  float: left;
+  width: 30%;
+  background-color: mistyrose;
+  height: 500px;
+  display: table-cell;
+}
+
+.cube, .jelly {
+  margin: 0 2.5%;
+}
+
+.col img {
+  width: 96%;
+  max-width: 272px;
+  display: block;
+  margin: 2% auto 0;
+}
+
+.cube img{
+  margin-bottom: 65px;
+}
+
+.pudding img{
+  margin-bottom: 25px;
+}
+
+.profile {
+  padding: 0 2%;
 }
