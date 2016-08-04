@@ -36,6 +36,19 @@ br {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+a:visited {
+  color: maroon;
+}
+
+a:hover {
+  color: purple;
+}
+
 .extra1, .extra2 {
   display: none;
 }
@@ -141,4 +154,37 @@ br {
       margin-bottom: 25px;
     }
 
+  }
+
+  /*Print stylesheet */
+
+  @media print {
+    * {
+      background: transparent !important;
+      color: #000 !important;
+      text-shadow: none !important;
+    }
+
+    h1, h2 {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .oozeline img {
+      display: none;
+    }
+    a[href^="http:"]::after {
+      content: " [" attr(href)"]";
+      color: blue;
+    }
+
+    h2, ul{
+      page-break-after: avoid;
+    }
+
+    p {
+      orphans: 3;
+      widows: 3;
+      font-size: 11pt;
+    }
   }
